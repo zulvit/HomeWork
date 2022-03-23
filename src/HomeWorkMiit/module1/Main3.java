@@ -4,38 +4,39 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main3 {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
         String numbers = scanner.nextLine();
-        String[] array = numbers.split(" ");
+        String[] arrayString = numbers.split(" ");
+        int[] array = new int[arrayString.length];
 
-        int[] arrayOnInt = new int[array.length];
         for (int i = 0; i < array.length; i++) {
-            arrayOnInt[i] = Integer.parseInt(array[i]);
+            array[i] = Integer.parseInt(arrayString[i]);
         }
 
-        int shift = scanner.nextInt();
-        arrayOnInt = shiftLeft(arrayOnInt, shift);
-        String[] result = new String[arrayOnInt.length];
+        int counterSteps = scanner.nextInt();
+        int temp;
 
-        for (int i = 0; i < arrayOnInt.length; i++) {
-            result[i] = String.valueOf(arrayOnInt[i]);
+        if (counterSteps > array.length) {
+            counterSteps = counterSteps % array.length;
         }
 
-        String output = Arrays.toString(result)
+        for (int i = 0; i < counterSteps; i++) {
+            temp = array[0];
+            for (int j = 0; j < array.length - 1; j++) {
+                array[j] = array[j + 1];
+            }
+            array[array.length - 1] = temp;
+        }
+
+        String result = Arrays.toString(array)
                 .replace("[", "")
                 .replace("]", "")
                 .replace(",", "");
 
-        System.out.println(output);
-    }
-
-    public static int[] shiftLeft(int[] a, int shift) {
-        int length = shift;
-        int[] result = new int[length];
-        System.arraycopy(a, shift, result, 0, length - shift);
-        System.arraycopy(a, 0, result, length - shift, shift);
-        return result;
+        System.out.println(result);
     }
 }
 

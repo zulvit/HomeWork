@@ -17,15 +17,19 @@ public class Main1 {
         }
 
         int minValue = matrix[0][0];
+
+        StringBuilder result = new StringBuilder();
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < column; j++) {
-                System.out.print(matrix[i][j] + " ");
+                result.append(matrix[i][j]).append(" ");
                 if (minValue > matrix[i][j]) {
                     minValue = matrix[i][j];
                 }
             }
-            System.out.println();
+            result.deleteCharAt(result.length() - 1);
+            result.append("\n");
         }
+        System.out.print(result);
         System.out.println(minValue);
     }
 }

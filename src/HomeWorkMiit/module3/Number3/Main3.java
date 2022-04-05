@@ -16,7 +16,7 @@ public class Main3 {
         }
 
         for (int i = 0; i < personList.size(); i++) {
-            Collections.sort(personList, new Comparator<Person>() {
+            personList.sort(new Comparator<Person>() {
                 @Override
                 public int compare(Person o1, Person o2) {
                     byte[] arrayO1 = o1.getName().getBytes();

@@ -9,6 +9,8 @@ public class Vehicle {
 
     private void setPassengers(int passengers) throws Exception {
         if (passengers < 0) {
+            throw new Exception("Invalid negative number");
+        } else if (passengers == 0) {
             throw new Exception("Need passengers to drive");
         } else {
             this.passengers = passengers;

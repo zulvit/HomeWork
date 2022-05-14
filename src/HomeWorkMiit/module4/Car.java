@@ -8,20 +8,21 @@ public class Car extends Vehicle {
         super(passengers);
         this.setHorsePower(horsePower);
         this.setModel(model);
-        System.out.printf("In a Car %s passengers with %s horse power",
+        System.out.printf("In a Car %s passengers \n" +
+                        "With %s horse power",
                 passengers, horsePower);
     }
 
     private void setHorsePower(int horsePower) throws Exception {
         if (horsePower < 0) {
-            throw new Exception("С 0 до кальянной за 4 секунды(пешком)");
+            throw new Exception("С 0 до кальянной за 4 секунды. (пешком)");
         }
         this.horsePower = horsePower;
     }
 
     private void setModel(String model) throws Exception {
-        if (model.equals(" ")) {
-            throw new Exception("Название не может быть пустым -_-");
+        if (model.length() < 2) {
+            throw new Exception("Invalid short value");
         }
         this.model = model;
     }

@@ -31,5 +31,14 @@ public class Main3 {
                 System.out.println(p.getName());
             }
         }
+
+        Person person = new Person("Savva", 123);
+        try {
+            person.setBuka(-4);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        System.out.println(person.getPositiveBuka());
+        System.out.println(person.buka);
     }
 }

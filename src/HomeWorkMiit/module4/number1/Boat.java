@@ -1,4 +1,4 @@
-package HomeWorkMiit.module4;
+package HomeWorkMiit.module4.number1;
 
 public class Boat extends Vehicle {
     private int oarsCount;

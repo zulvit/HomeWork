@@ -16,4 +16,10 @@ public class Human {
     private void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+    @Override
+    public String toString() {
+        return "First Name: " + firstName + '\n' +
+                "Last Name: " + lastName + '\n';
+    }
 }

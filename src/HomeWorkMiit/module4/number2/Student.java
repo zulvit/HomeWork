@@ -14,8 +14,7 @@ public class Student extends Human {
 
     @Override
     public String toString() {
-        return "Student{" +
-                "facultyNumber='" + facultyNumber + '\'' +
-                '}';
+        return super.toString() +
+                "Faculty number: " + facultyNumber + '\n';
     }
 }

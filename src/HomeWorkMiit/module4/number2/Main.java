@@ -14,7 +14,7 @@ public class Main {
         Student student = new Student(userOneInfo[0], userOneInfo[1], userOneInfo[2]);
         Worker worker = new Worker(userTwoInfo[0], userTwoInfo[1], Double.parseDouble(userTwoInfo[2]), Double.parseDouble(userTwoInfo[3]));
 
-        System.out.println(student);
+        System.out.print(student);
         System.out.println(worker);
     }
 }

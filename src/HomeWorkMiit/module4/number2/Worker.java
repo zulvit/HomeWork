@@ -20,9 +20,9 @@ public class Worker extends Human {
 
     @Override
     public String toString() {
-        return "Worker{" +
-                "weekSalary=" + weekSalary +
-                ", workHoursPerDay=" + workHoursPerDay +
-                '}';
+        return super.toString() +
+                "Week salary: " + String.format("%.2f", weekSalary) + '\n' +
+                "Hours per day: " + String.format("%.2f", workHoursPerDay) + '\n' +
+                "Salary per hour: " + String.format("%.2f", weekSalary / (7 * 10)) + '\n';
     }
 }

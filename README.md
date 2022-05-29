@@ -15,6 +15,7 @@
   <li>OOP. Extends;</li>
   <li>OOP. Overriding;</li>
   <li>OOP. Interfaces;</li>
+  <li>Multithreading;</li>
   <li>Working with files;</li>
   <li>Stack and Queue;</li>
   <li>Exceptions and Errors;</li>

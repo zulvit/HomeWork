@@ -23,7 +23,6 @@ public class Main {
                 .replace("]", "")
                 .replace(",", "");
 
-
         System.out.print(result);
         System.out.println("\n" + sum);
     }

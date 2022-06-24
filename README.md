@@ -1,5 +1,5 @@
 <h1 align="center">Hi there, I'm <a href="https://vk.com/savva77794" target="_blank">Savva</a>
-<img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
+<img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32" alt=""/></h1>
 <h3 align="center">Computer science student from Russia. This is a java homework assignment in the first year of the University of RUT MIIT.</h3>
 
 <h4>Learned technologies and topics:</h4>

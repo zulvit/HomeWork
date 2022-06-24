@@ -1,12 +1,12 @@
-package HomeWorkMiit.module4.Number4;
+package HomeWorkMiit.module4.number4;
 
 public abstract class Hero {
     private String username;
     private int level;
 
     public Hero(String username, int level) {
-        this.username = username;
-        this.level = level;
+        setUsername(username);
+        setLevel(level);
     }
 
     public void setUsername(String username) {

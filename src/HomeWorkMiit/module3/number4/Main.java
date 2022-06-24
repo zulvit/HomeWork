@@ -1,4 +1,4 @@
-package HomeWorkMiit.module3.Number4;
+package HomeWorkMiit.module3.number4;
 
 import java.util.Scanner;
 

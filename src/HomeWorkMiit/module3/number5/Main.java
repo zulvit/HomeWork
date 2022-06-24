@@ -1,4 +1,4 @@
-package HomeWorkMiit.module3.Number5;
+package HomeWorkMiit.module3.number5;
 
 public class Main {
     public static void main(String[] args) {

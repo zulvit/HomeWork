@@ -1,4 +1,4 @@
-package HomeWorkMiit.module3.Number2;
+package HomeWorkMiit.module3.number2;
 
 public class BankAccount {
     private final int id;

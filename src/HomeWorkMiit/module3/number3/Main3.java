@@ -1,4 +1,4 @@
-package HomeWorkMiit.module3.Number3;
+package HomeWorkMiit.module3.number3;
 
 import java.util.*;
 

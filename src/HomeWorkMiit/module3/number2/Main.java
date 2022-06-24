@@ -1,4 +1,4 @@
-package HomeWorkMiit.module3.Number2;
+package HomeWorkMiit.module3.number2;
 
 import java.util.ArrayList;
 import java.util.List;
